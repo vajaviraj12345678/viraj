@@ -88,6 +88,7 @@ savetaskbtn.addEventListener("click", function(){
 function deleteitem(index){
     let webtask = localStorage.getItem("localtask");
     let taskObj = JSON.parse(webtask);
+    confirm("are you want to delete");	
     taskObj.splice(index, 1);
     localStorage.setItem("localtask", JSON.stringify(taskObj));
     showtask();
