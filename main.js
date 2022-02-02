@@ -154,6 +154,7 @@ deleteallbtn.addEventListener("click", function(){
     let webtask = localStorage.getItem("localtask");
     let taskObj = JSON.parse(webtask);
     if(webtask == null){
+	  
         taskObj = [];
     }
     else{
